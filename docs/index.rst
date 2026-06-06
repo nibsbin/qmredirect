@@ -4,6 +4,7 @@ Redirecting to quillmark.dev
 .. raw:: html
 
    <script>
+      // Match RTD patterns like /en/latest/ or /projects/myproject/en/stable/
       var path = window.location.pathname.replace(/^\/(?:projects\/[^/]+\/)?[a-z]{2}(?:[-_][a-z]+)?\/[^/]+/i, "");
       if (!path.startsWith("/")) path = "/" + path;
       var query = window.location.search;
